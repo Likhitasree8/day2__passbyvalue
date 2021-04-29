@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Pass by value </title>
+</head>
+<body>
+<h1 style="text-align:center"><u>Pass by Value</u></h1>
+<script> 
+function passbyvalue(a,b)
+{
+    var T=a;
+    a=b;
+    b=T;
+    
+    document.write("<h3>When in the Function: </h3>");
+    document.write(`<h3>a=${a}, b=${b} </h3><br>`);
+}
+var a,b;
+
+a=parseInt(prompt("Enter 1st Number value:"));
+b=parseInt(prompt("Enter 2nd Number value:"));
+
+document.write('<h3>Before the swap: <br> </h3>');
+document.write(`<h3>a=${a}, b=${b} </h3><br>`);
+
+passbyvalue(a,b);
+
+document.write("<h3>After the swap:  </h3>");
+document.write(`<h3>a=${b}, b=${a} </h3><br>`); 
+
+</script>
+</body>
+</html>
